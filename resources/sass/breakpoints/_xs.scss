@@ -1,0 +1,11 @@
+@import "breakpoints/xs/navigation";
+@import "breakpoints/xs/footer";
+@import "breakpoints/xs/general";
+
+#content {
+    .pgs {
+        @import "breakpoints/xs/sections/cta";
+    }
+
+    @import "breakpoints/xs/pages/front";
+}

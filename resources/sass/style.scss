@@ -1,0 +1,64 @@
+/*!
+Theme Name: Decraene Technics by digital astronaut
+Theme URI: https://decraenetechnics.be/
+Author: Tim Camerlinckx / digital astronaut
+Author URI: https://digitalastronaut.be/
+Description: Theme custom made for the Decraene Technics website
+Version: 1.0.0
+*/
+
+@import "compass";
+@import "config/mixins";
+@import "config/variables";
+@import "config/reset";
+
+/*****************************************/
+/************** APPLICATION **************/
+/*****************************************/
+
+body {
+    background: $color-white;
+    overflow-x: hidden !important;
+    font-family: $font-regular;
+}
+
+#decraene-app {
+    @include selection {
+        background: $color-orange;
+        color: $color-white;
+    }
+
+    @import "general";
+
+    /***************************************/
+    /*************** DESKTOP ***************/
+    /***************************************/
+    @import "breakpoints/md";
+
+    /*********************************************/
+    /*************** LARGE DESKTOP ***************/
+    /*********************************************/
+    @media screen and (min-width: 1200px) {
+        @import "breakpoints/lg";
+    }
+
+    /**************************************/
+    /*************** TABLET ***************/
+    /**************************************/
+    @media screen and (max-width: 991px) {
+        @import "breakpoints/sm";
+    }
+
+    /**************************************/
+    /*************** MOBILE ***************/
+    /**************************************/
+    @media screen and (max-width: 767px) {
+        @import "breakpoints/xs";
+    }
+}
+
+/*.modal-backdrop.show {
+    @include opacity( 0.8 );
+}*/
+
+@import "fallback";

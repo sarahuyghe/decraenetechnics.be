@@ -1,0 +1,90 @@
+/***********************************/
+/************** RESET **************/
+/***********************************/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+input,
+textarea,
+button,
+div {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  &:not([type="checkbox"]):not([type="radio"]) {
+    @include appearance(none);
+  }
+}
+
+fieldset {
+  border: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+.for-mobile {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}

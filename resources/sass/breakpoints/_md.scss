@@ -1,0 +1,14 @@
+@import "breakpoints/md/navigation";
+@import "breakpoints/md/footer";
+
+.component {
+    @import "breakpoints/md/components/form";
+}
+
+#content {
+    .pgs {
+        @import "breakpoints/md/sections/cta";
+    }
+
+    @import "breakpoints/md/pages/front";
+}
