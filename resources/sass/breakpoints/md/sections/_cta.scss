@@ -1,2 +1,15 @@
 &.cta {
+  background-color: $color-grey;
+  border: 1px solid black;
+  // position: relative;
+}
+
+&.cta:after {
+  content: '\A';
+  position: absolute;
+  background: black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
 }
