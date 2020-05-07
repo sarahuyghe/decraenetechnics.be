@@ -103,7 +103,7 @@
   & .column-project {
     & .image {
       position: relative;
-      display: block;
+
     }
 
     & .image::after {
@@ -113,7 +113,7 @@
       top: -2.5%;
       bottom: -2.5%;
       left: 5%;
-      right: 1%;
+      right: 3.5%;
       z-index: -1;
     }
 
