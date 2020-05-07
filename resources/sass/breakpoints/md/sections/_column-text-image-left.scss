@@ -1,6 +1,10 @@
-.column-text-image {
+&.column-text-image {
+  background-color: $color-orange;
+
   & img {
     padding-left: -25px;
 
   }
+
+
 }
