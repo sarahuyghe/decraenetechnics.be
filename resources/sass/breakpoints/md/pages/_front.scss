@@ -12,3 +12,48 @@
     line-height: 15px;
   }
 }
+
+//must go to sections intro butt is not working
+
+.intro .content-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url(./../../../../../assets/images/logo_bg.png);
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: -1;
+    left: 42.5%;
+    top: -50%;
+  }
+}
+
+//must go to section cta butt is not working
+
+.cta {
+  // background-color: $color-grey;
+  position: relative;
+  margin-bottom: 0;
+
+  & img {
+
+    margin-bottom: -30px;
+  }
+
+  // position: relative;
+}
+
+.cta:before {
+  content: '\A';
+  position: absolute;
+  background: #e5e5e5;
+  top: 30%;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  z-index: -1;
+}

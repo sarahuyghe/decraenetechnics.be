@@ -1,10 +1,10 @@
-&.cta {
+.cta {
   background-color: $color-grey;
   border: 1px solid black;
   // position: relative;
 }
 
-&.cta:after {
+.cta:after {
   content: '\A';
   position: absolute;
   background: black;
