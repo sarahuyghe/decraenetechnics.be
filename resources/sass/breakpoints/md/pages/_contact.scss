@@ -1,0 +1,18 @@
+&.contact {
+
+  &.intro {
+    margin: 50px 0;
+  }
+
+  & .intro::before {}
+}
+
+&.contact .intro {
+  margin: 50px 0;
+
+  & .intro::before {
+    left: 0;
+  }
+}
+
+& .image-wrapper {}
