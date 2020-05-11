@@ -2,7 +2,8 @@
 
 .header {
   margin-top: 0;
-  background: linear-gradient(270deg, #EF952D 0%, rgba(255, 255, 255, 0) 100%), #EF7B00;
+  background: linear-gradient(270deg, #ef952d 0%, rgba(255, 255, 255, 0) 100%),
+    #ef7b00;
   outline: 1px solid rgba($color: $color-white, $alpha: 0.33);
   outline-offset: -45px;
 
@@ -21,7 +22,6 @@
   margin-bottom: 0;
 
   & img {
-
     margin-bottom: -30px;
   }
 
@@ -29,7 +29,7 @@
 }
 
 .cta:before {
-  content: '\A';
+  content: "\A";
   position: absolute;
   background: #e5e5e5;
   top: 30%;
@@ -45,7 +45,7 @@
   & .image-wrapper {
     position: relative;
     display: block;
-    background-color: #EFEFEF;
+    background-color: #efefef;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -61,11 +61,10 @@
 
   & .right img {
     margin-left: 20px;
-
   }
 }
 
-//must go into section projects 
+//must go into section projects
 .column-project {
   & .image-wrapper {
     position: relative;
@@ -86,11 +85,9 @@
 
 //pages contact
 .contact {
-
   & .titel {
     margin-bottom: 80px;
     // @extend .intro;
-
   }
 
   & .titel .content-wrapper::before {
@@ -100,7 +97,7 @@
   & .image-wrapper {
     position: relative;
     display: block;
-    background-color: #EFEFEF;
+    background-color: #efefef;
     margin-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -145,7 +142,7 @@
 }
 
 .certification::before {
-  content: '';
+  content: "";
   position: absolute;
   background: #e5e5e5;
   top: 25%;
@@ -182,7 +179,7 @@
   & .image-wrapper {
     // position: relative;
     display: block;
-    background-color: #EFEFEF;
+    background-color: #efefef;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -193,7 +190,6 @@
 
   & .right img {
     margin-left: 20px;
-
   }
 
   & .second-service {
@@ -206,5 +202,237 @@
       font-size: 28px;
       line-height: 38px;
     }
+  }
+}
+
+//section posts
+.posts {
+  & .post-wrapper {
+    box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.1);
+    padding: 40px;
+    margin-right: 40px;
+
+    & h5 {
+      font-size: 2rem;
+      line-height: 25px;
+    }
+  }
+}
+
+// faq-tickets
+
+.posts-faq {
+  & .question-wrapper {
+    box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+
+    & .question {
+      font-size: 1.8rem;
+      line-height: 23px;
+      font-weight: 700;
+      color: $color-offblack;
+      margin-bottom: 24px;
+    }
+
+    & .category {
+      font-weight: 300;
+      font-size: 1.2rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      line-height: 15px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// comonent filter 
+.filter {
+  display: flex;
+
+  & p {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  & .active {
+    color: $color-offblack;
+  }
+
+  & .tag {
+    display: inline;
+    text-indent: .75rem;
+  }
+
+  & .tag::after {
+    content: " / ";
+    color: $color-grey;
+  }
+
+  & .filter-tags {
+    display: flex;
+  }
+
+}
+
+// page faq search
+.search {
+  margin-bottom: 20px;
+}
+
+// page blog
+.post-wrapper {
+  position: relative;
+  margin: 30px 0;
+
+
+  & .image-wrapper {
+    background: $color-offblack;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  & img {
+    margin-left: -10px;
+  }
+
+
+  & .content-wrapper {
+    box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.1);
+
+    padding: 30px;
+    margin-right: 50px;
+    z-index: 3;
+
+    & h5 {
+      font-size: 2rem;
+      line-height: 25px;
+      font-weight: normal;
+      color: $color-offblack;
+      margin-bottom: 24px;
+    }
+
+    & .category {
+      font-weight: 300;
+      font-size: 1.2rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      line-height: 15px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// component pagination
+
+.page-navigation {
+  & nav {
+    display: flex;
+  }
+
+  & p,
+  .page-link {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-grey;
+  }
+
+  & p {
+    padding-right: .75rem;
+  }
+
+
+  & .page-link {
+    border: none;
+    font-size: 1.2rem;
+    line-height: 20px;
+    font-weight: 300;
+    display: inline;
+    padding: 0;
+    margin: 0;
+
+
+  }
+
+  & .active {
+    color: $color-offblack;
+    font-weight: 600;
+  }
+
+  & .page-link::after {
+    content: "/";
+    padding: 0 .75rem;
+    color: $color-grey;
+  }
+}
+
+// pages blog-detail 
+.blog-detail {
+
+  & .image-wrapper {
+    // position: relative;
+    margin: 0;
+    display: block;
+    background-color: #efefef;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & img {
+      margin-left: 20px;
+      padding: 0;
+      display: block;
+    }
+  }
+
+
+  & .editor-content {
+    padding-bottom: 75px;
+    padding-top: 65px;
+
+    & p,
+    h4 {
+      margin: 30px 0;
+    }
+  }
+
+  & .pagination {
+    border-top: $color-grey solid 1px;
+    padding-top: 40px;
+
+    & a {
+      font-size: 1.2rem;
+      line-height: 20px;
+      color: $color-grey;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+// page post-detail
+.project-detail {
+  // &.image-wrapper {
+  //   position: relative;
+
+  //   &.left-top::after {
+  //     position: absolute;
+  //   }
+  // }
+
+  & .left-top {
+    position: relative;
+  }
+
+  & .left-top::before {
+    position: absolute;
+    content: "";
+    background-color: $color-offblack;
+    width: 140px;
+    height: 50px;
+    top: 20;
+    left: -30;
+    // z-index: -1;
   }
 }

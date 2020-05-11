@@ -1,6 +1,11 @@
 &.form {
   margin-top: 50px;
 
+  &-search {
+    @extend .form;
+    margin-top: 0;
+  }
+
   & .form-group {
     position: relative;
     margin: 10px 0;
