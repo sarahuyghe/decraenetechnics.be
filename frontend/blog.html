@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../assets/css/vendor/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./style.css" />
   <title>Decraene technics</title>
 </head>
@@ -42,12 +43,20 @@
             <li class="nav-item"><a href="jobs.html" class="nav-link">Jobs</a></li>
             <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-item">0498 45 84 29</li>
+            <li class="nav-item phonenumber">0498 45 84 29</li>
           </ul>
         </div>
       </div>
     </nav>
     <div id="content">
+      <div id="toTop" class="sidebar hide">
+        <div>
+          <img src="./../assets/images/message-icon.svg" alt="">
+        </div>
+        <div>
+          <img src="./../assets/images/offerte-icon.svg" alt="">
+        </div>
+      </div>
       <section class="section blog">
         <div class="container">
           <div class="component filter">
@@ -73,7 +82,9 @@
                   <h5>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod.</h5>
                   <p class="category">Domitica, Beveiliging</p>
-                  <a href="./blog-post.html" class="btn second-cta">Lees meer</a>
+                  <div class="button-wrapper">
+                    <a href="./blog-post.html" class="btn second-cta">Lees meer</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,7 +97,9 @@
                   <h5>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod.</h5>
                   <p class="category">Domitica, Beveiliging</p>
-                  <a href="" class="btn second-cta">Lees meer</a>
+                  <div class="button-wrapper">
+                    <a href="./blog-post.html" class="btn second-cta">Lees meer</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,7 +112,9 @@
                   <h5>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod.</h5>
                   <p class="category">Domitica, Beveiliging</p>
-                  <a href="" class="btn second-cta">Lees meer</a>
+                  <div class="button-wrapper">
+                    <a href="./blog-post.html" class="btn second-cta">Lees meer</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -112,7 +127,9 @@
                   <h5>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod.</h5>
                   <p class="category">Domitica, Beveiliging</p>
-                  <a href="" class="btn second-cta">Lees meer</a>
+                  <div class="button-wrapper">
+                    <a href="./blog-post.html" class="btn second-cta">Lees meer</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -138,15 +155,17 @@
               <img src="./../temp/person_contact.png" alt="">
             </div>
             <div class="colummn col-md-6">
-              <h3>Neem contact met ons op!</h3>
-              <div class="editor-content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                  est
-                  laborum.</p>
+              <div class="content-wrapper">
+                <h3>Neem contact met ons op!</h3>
+                <div class="editor-content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.</p>
+                </div>
+                <a href="" class="btn btn-cta">Contacteer ons</a>
               </div>
-              <a href="" class="btn btn-cta">Contacteer ons</a>
             </div>
           </div>
         </div>
@@ -183,7 +202,7 @@
             </ul>
           </div>
           <div class="column col-md-3 text-right">
-            <img src="./../assets/images/logo_color.png" alt="logo decraene technics in color">
+            <img src="./../assets/images/logo_color.png" alt="logo decraene technics in color" class="d-inline">
             <p>Kortrijkstraat 78</p>
             <p>9790 Wortegem-Petegem</p>
             <p>0498 45 84 29</p>

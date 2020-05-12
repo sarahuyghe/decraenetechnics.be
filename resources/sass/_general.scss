@@ -98,6 +98,7 @@ section {
 
 .title-left {
   position: relative;
+  margin-bottom: 75px;
 
   &::before {
     content: "";
@@ -116,7 +117,9 @@ section {
  * BUTTONS
  */
 
-.button-wrapper {}
+.button-wrapper {
+  text-align: right;
+}
 
 .btn {
   font-weight: 600;
@@ -142,6 +145,8 @@ section {
   }
 }
 
+
+
 .btn-cta {
   @extend .btn;
   border-radius: 25px;
@@ -162,27 +167,27 @@ section {
   border-radius: 0;
   border: unset;
   position: relative;
-  padding: 5px;
+  padding: 3px 5px;
 }
 
 .second-cta::before {
   content: "";
-  width: 15%;
+  width: 18px;
   height: 1px;
   left: 0;
   top: 0;
   position: absolute;
-  z-index: 9;
+  // z-index: 9;
   background: linear-gradient(to right, $color-orange 50%, $color-white 50%);
 }
 
 .second-cta::after {
   content: "";
-  height: 50%;
+  height: 18px;
   width: 1px;
   left: 0;
   top: 0;
   position: absolute;
-  z-index: 100;
+  // z-index: 100;
   background: linear-gradient(to bottom, $color-orange 50%, $color-white 50%);
 }

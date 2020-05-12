@@ -1,6 +1,21 @@
 nav#nav-main {
-  &.scrolling {
-  }
+  &.scrolling {}
+}
+
+.phonenumber {
+  position: relative;
+  padding-left: 20px;
+}
+
+.phonenumber::after {
+  content: "";
+  background-image: url(./../../../../../assets/images/phone-icon.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 50px;
+  position: absolute;
+  top: 5%;
+  left: 0;
 }
 
 .navbar {
@@ -16,12 +31,18 @@ nav#nav-main {
 
 .main {
   margin-top: 25px;
+
   & .nav-link {
     color: $color-offblack;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 40px;
-    margin: 0 20px;
+    margin: 0 30px;
+    transition: .25s all;
+  }
+
+  & .nav-link:hover {
+    color: $color-orange
   }
 
   & .btn {
@@ -29,6 +50,10 @@ nav#nav-main {
     font-size: 1.2rem;
     font-weight: 700;
     margin-right: 20px;
+  }
+
+  & .nav-link .active {
+    color: $color-orange
   }
 }
 
@@ -42,12 +67,22 @@ nav#nav-main {
   & .nav-item {
     font-size: 1.1rem;
     line-height: 14px;
-    margin: 0 5px;
+    margin: 0 7.5px;
     letter-spacing: 0.05em;
 
     & .nav-link {
       color: $color-grey;
       letter-spacing: 0.05em;
+      transition: .5s all;
+
+    }
+
+    & .nav-link:hover {
+      color: $color-orange
+    }
+
+    & .nav-link .active {
+      color: $color-orange
     }
   }
 }
