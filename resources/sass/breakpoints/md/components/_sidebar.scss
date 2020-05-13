@@ -1,0 +1,21 @@
+&.sidebar {
+  background-color: $color-orange;
+  box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.15);
+  border-radius: 10px 0px 0px 10px;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  width: 50px;
+  height: 100px;
+
+  & div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & div:first-child {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.05);
+  }
+}

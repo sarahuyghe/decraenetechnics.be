@@ -1,0 +1,38 @@
+&.blog-detail {
+  & .image-wrapper {
+    // position: relative;
+    margin: 0;
+    display: block;
+    background-color: #efefef;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & img {
+      margin-left: 20px;
+      padding: 0;
+      display: block;
+    }
+  }
+
+  & .editor-content {
+    padding-bottom: 75px;
+    padding-top: 65px;
+
+    & p,
+    h4 {
+      margin: 30px 0;
+    }
+  }
+
+  & .pagination {
+    border-top: $color-grey solid 1px;
+    padding-top: 40px;
+
+    & a {
+      font-size: 1.2rem;
+      line-height: 20px;
+      color: $color-grey;
+      text-decoration-line: underline;
+    }
+  }
+}

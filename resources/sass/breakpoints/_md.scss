@@ -2,13 +2,36 @@
 @import "breakpoints/md/footer";
 
 .component {
-    @import "breakpoints/md/components/form";
+  @import "breakpoints/md/components/form";
+  @import "breakpoints/md/components/sidebar";
+  @import "breakpoints/md/components/filter";
+  @import "breakpoints/md/components/page-navigation";
 }
 
 #content {
-    .pgs {
-        @import "breakpoints/md/sections/cta";
-    }
+  .pgs {
+    @import "breakpoints/md/sections/cta";
+    @import "breakpoints/md/sections/modal";
+    @import "breakpoints/md/sections/image-grid";
+    @import "breakpoints/md/sections/faq-list";
+    @import "breakpoints/md/sections/certification";
+    @import "breakpoints/md/sections/column-image-text";
+    @import "breakpoints/md/sections/services";
+    @import "breakpoints/md/sections/posts";
+    @import "breakpoints/md/sections/faq-posts";
+    @import "breakpoints/md/sections/blog-post";
+    @import "breakpoints/md/sections/checkpoints";
+    @import "breakpoints/md/sections/carousel";
+    @import "breakpoints/md/sections/projects";
 
-    @import "breakpoints/md/pages/front";
+
+  }
+
+  @import "breakpoints/md/pages/front";
+  @import "breakpoints/md/pages/contact";
+  @import "breakpoints/md/pages/blog-detail";
+  @import "breakpoints/md/pages/project-detail";
+  @import "breakpoints/md/pages/faq";
+
+
 }

@@ -1,6 +1,25 @@
 &.filter {
+  display: flex;
+
   & p {
-    color: red
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  & .active {
+    color: $color-offblack;
+  }
+
+  & .tag {
+    display: inline;
+    text-indent: 0.75rem;
+  }
+
+  & .tag::after {
+    content: " / ";
+    color: $color-grey;
   }
 
   & .filter-tags {

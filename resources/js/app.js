@@ -9,28 +9,42 @@
 
 $(document).ready(function () {
 
-    App.init();
+  App.init();
 
 });
 
+
+var $questions = document.querySelectorAll('#questions');
 var App = {
 
-    /**
-     * Init
-     * @descr Initializes all JavaScript functionality for the application
-     */
 
-    init: function () {
-        
-        // Navigation utils
-        $(window).scroll( this.scrolled );
-        
-    },
+  /**
+   * Init
+   * @descr Initializes all JavaScript functionality for the application
+   */
 
-    scrolled: function () {
-        var currentScrollPosition = $(window).scrollTop();
-        if (currentScrollPosition>50) $('nav#nav-main').addClass('scrolling');
-        else $('nav#nav-main').removeClass('scrolling');
-    },
+  init: function () {
+
+    // Navigation utils
+    $(window).scroll(this.scrolled);
+    // $questions.forEach(question => question.addEventListener('click', console.log(e.currentTarget)))
+
+  },
+
+  scrolled: function () {
+    var currentScrollPosition = $(window).scrollTop();
+    if (currentScrollPosition > 50) $('nav#nav-main').addClass('scrolling');
+    else $('nav#nav-main').removeClass('scrolling');
+  },
+
+
 
 };
+// {
+
+//   const $questions = document.querySelectorAll('#questions');
+//   const init = () => {
+
+//   };
+//   init();
+// }

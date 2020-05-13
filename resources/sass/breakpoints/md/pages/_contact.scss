@@ -1,18 +1,27 @@
 &.contact {
-
-  &.intro {
-    margin: 50px 0;
+  & .titel {
+    margin-bottom: 80px;
   }
 
-  & .intro::before {}
-}
-
-&.contact .intro {
-  margin: 50px 0;
-
-  & .intro::before {
+  & .titel .content-wrapper::before {
     left: 0;
   }
-}
 
-& .image-wrapper {}
+  & .image-wrapper {
+    position: relative;
+    display: block;
+    background-color: #efefef;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+
+    & img {
+      margin-left: -20px;
+    }
+  }
+
+  & .content-wrapper div {
+    margin: 20px 0;
+  }
+}
