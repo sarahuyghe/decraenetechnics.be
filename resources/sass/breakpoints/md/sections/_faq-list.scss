@@ -2,10 +2,10 @@
 
   .titel {
     font-weight: 900;
-    font-size: 50px;
+    font-size: 5rem;
     line-height: 50px;
     text-transform: uppercase;
-    color: #EFEFEF;
+    color: $color-lightgrey;
   }
 
   .question-wrapper {

@@ -38,11 +38,11 @@
 
   .error {
     & label {
-      color: #EF0000;
+      color: $color-red;
     }
 
     & input {
-      border-color: #EF0000;
+      border-color: $color-red;
     }
   }
 
@@ -55,11 +55,11 @@
     padding: 20px 25px;
 
     &::placeholder {
-      color: #e5e5e5;
+      color: $color-lightestgrey;
     }
 
     &:focus {
-      border: 1px solid #007CEF;
+      border: 1px solid $color-blue;
       box-shadow: 0px 0px 6px rgba(0, 124, 239, 0.25);
     }
   }
