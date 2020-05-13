@@ -1,8 +1,20 @@
 &.checkpoints {
-  .image-checkmarks {
+  & .image-checkmarks {
     h5 {
       line-height: 30px;
       margin: 30px 0;
+    }
+
+    .image-wrapper {
+      position: relative;
+      background: $color-offblack;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 30px;
+    }
+
+    & img {
+      margin-left: -10px;
     }
   }
 
