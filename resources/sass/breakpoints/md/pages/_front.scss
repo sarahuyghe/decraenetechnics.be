@@ -289,6 +289,8 @@
       margin-bottom: 20px;
     }
   }
+
+
 }
 
 // comonent filter
@@ -553,10 +555,28 @@
       font-weight: 600;
       color: $color-offblack;
       margin: 30px 0;
+      position: relative;
+    }
+
+    .question::after {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      background-image: url(./../../../../../assets/images/arrow.svg);
+      background-repeat: no-repeat;
+      top: 0;
+      left: -35px;
+      width: 16px;
+      height: 16px;
+      transform: rotate(-90deg);
     }
 
     & .answer p {
       padding: 10px 0
+    }
+
+    & .hide {
+      display: none;
     }
   }
 
@@ -610,5 +630,119 @@
 
   & img:hover {
     filter: grayscale(0%)
+  }
+}
+
+
+//pgs carrousel 
+
+.carousel-wrapper {
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    background-color: #EFEFEF;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    transition: all 0.5s;
+    top: unset;
+    bottom: -5%;
+
+  }
+
+  .carousel-control-prev {
+    left: unset;
+    right: 10%
+  }
+
+  .carousel-control-next:hover,
+  .carousel-control-prev:hover {
+    transform: scale(1.1);
+    background-color: red;
+  }
+
+  .carousel-control-next::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    background-image: url(./../../../../../assets/images/arrow.svg);
+    background-repeat: no-repeat;
+
+    transform: rotate(-180deg);
+    width: 12px;
+    height: 16px;
+  }
+
+  .carousel-control-prev::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    background-image: url(./../../../../../assets/images/arrow.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 16px;
+  }
+
+}
+
+//section modal
+.modal {
+  .modal-content {
+    border: 1px solid #EFEFEF;
+    border-radius: 0;
+    box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.1);
+    padding: 50px;
+
+    h5 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 30px;
+    }
+
+    .modal-header,
+    .modal-footer {
+      border: none;
+    }
+
+    .modal-body {
+      border: none;
+    }
+  }
+}
+
+
+
+//pgs graphic-house
+.graphic-house {
+  position: relative;
+
+  .content-wrapper {
+    width: 260px;
+    position: absolute;
+
+    h5 {
+      font-size: 2.4rem;
+      line-height: 30px;
+      color: $color-orange;
+      font-weight: 300;
+    }
+  }
+
+  .electricity {
+    top: 0
+  }
+
+  .solar-power {
+    right: 0;
+    top: 0
+  }
+
+  .home-battery {
+    right: 0;
+  }
+
+  .smart-home {
+    left: 25%
   }
 }

@@ -127,9 +127,6 @@ section {
   border-radius: 25px;
   text-transform: uppercase;
 
-  & .cta {}
-
-
   &.nav {
     background-color: $color-black;
     color: $color-white;
@@ -159,7 +156,17 @@ section {
   border-color: $color-orange;
   padding: 0 35px;
   margin: 20px 0;
+
+  &-grey {
+    @extend .btn-cta;
+    color: $color-offblack;
+    border-color: $color-offblack;
+    background-color: unset;
+    font-weight: 600;
+  }
 }
+
+
 
 .second-cta {
   @extend .btn;
