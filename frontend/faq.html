@@ -17,9 +17,13 @@
 
     <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <a href="index.html">
-        <img src="./../assets/images/logo.png" alt="logo decraene technics">
+        <img src="./../assets/images/logo.png" alt="logo decraene technics" class="navbar-brand" id="logo">
       </a>
-      <div class="collapse navbar-collapse justify-content-end">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="navbar-toggler-icon" src="./../assets/images/icon-menu.svg" alt="hamburger icon" width="10">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
         <ul class="main navbar-nav align-items-center" id="main-navbar">
           <li class="nav-item">
             <a href="service.html" class="nav-link">Elektriciteit</a>
@@ -59,7 +63,6 @@
           <img src="./../assets/images/offerte-icon.svg" alt="">
         </div>
       </div>
-
       <section>
         <div class="container">
           <div class="text-center title-center">
@@ -93,7 +96,6 @@
             </div>
           </div>
           <div class="row">
-
             <div class="column col-md-4">
               <div class="question-wrapper">
                 <p class="question">Is een elektrische keuring om de 25 jaar verplicht?</p>
@@ -135,7 +137,7 @@
       </section>
       <div class="pgs modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered mw-100 w-50" role="document">
+        <div class="modal-dialog modal-dialog-centered mw-100 w-md-50 w-75" role="document">
           <div class="modal-content col-md-12">
             <div class="modal-header">
               <h4 class="modal-title" id="exampleModalLabel">Kunnen er op elk dak zonnepanelen geplaatst worden?</h4>

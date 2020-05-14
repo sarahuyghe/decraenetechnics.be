@@ -1,12 +1,4 @@
 &.contact {
-  & .titel {
-    margin-bottom: 80px;
-  }
-
-  & .titel .content-wrapper::before {
-    left: 0;
-  }
-
   & .image-wrapper {
     position: relative;
     display: block;
@@ -14,7 +6,11 @@
     margin-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 100px;
+    }
 
     & img {
       margin-left: -20px;
@@ -23,5 +19,13 @@
 
   & .content-wrapper div {
     margin: 20px 0;
+  }
+
+  & .form {
+    margin-top: 40px;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 0;
+    }
   }
 }

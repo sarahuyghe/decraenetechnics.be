@@ -1,19 +1,38 @@
 &.projects {
   .column-project {
+    margin: 20px 0;
+
+    @media only screen and (min-width: 768px) {
+      margin: 0;
+    }
+
     .image-wrapper {
       position: relative;
       background: $color-offblack;
       padding-top: 10px;
       padding-bottom: 10px;
-      margin-right: 30px;
+      margin-left: 10px;
+
+      @media only screen and (min-width: 768px) {
+        margin-right: 30px;
+      }
     }
 
     & img {
+      width: 375px;
       margin-left: -10px;
+
+      @media only screen and (min-width: 768px) {
+        width: fit-content;
+      }
     }
 
     & .content-wrapper {
-      margin-top: 25px;
+      margin-top: 15px;
+
+      @media only screen and (min-width: 768px) {
+        margin-top: 25px;
+      }
     }
   }
 }

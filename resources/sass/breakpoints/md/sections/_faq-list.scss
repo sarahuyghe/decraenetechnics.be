@@ -2,10 +2,15 @@
 
   .titel {
     font-weight: 900;
-    font-size: 5rem;
-    line-height: 50px;
+    font-size: 3.5rem;
+    line-height: 40px;
     text-transform: uppercase;
     color: $color-lightgrey;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 5rem;
+      line-height: 50px;
+    }
   }
 
   .question-wrapper {
@@ -17,6 +22,11 @@
       color: $color-offblack;
       margin: 30px 0;
       position: relative;
+      padding-left: 30px;
+
+      @media only screen and (min-width: 768px) {
+        padding-left: 0;
+      }
     }
 
     .question::after {
@@ -26,14 +36,23 @@
       background-image: url(./../../../../../assets/images/arrow.svg);
       background-repeat: no-repeat;
       top: 0;
-      left: -35px;
+      left: 0px;
       width: 16px;
       height: 16px;
       transform: rotate(-90deg);
+
+      @media only screen and (min-width: 768px) {
+        left: -35px;
+      }
     }
 
     & .answer p {
-      padding: 10px 0
+      padding: 10px 0;
+      padding-left: 30px;
+
+      @media only screen and (min-width: 768px) {
+        padding-left: 0;
+      }
     }
 
     & .hide {

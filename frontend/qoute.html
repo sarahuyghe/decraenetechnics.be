@@ -15,9 +15,13 @@
   <div id="decraene-app">
     <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <a href="index.html">
-        <img src="./../assets/images/logo.png" alt="logo decraene technics">
+        <img src="./../assets/images/logo.png" alt="logo decraene technics" class="navbar-brand" id="logo">
       </a>
-      <div class="collapse navbar-collapse justify-content-end">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="navbar-toggler-icon" src="./../assets/images/icon-menu.svg" alt="hamburger icon" width="10">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
         <ul class="main navbar-nav align-items-center" id="main-navbar">
           <li class="nav-item">
             <a href="service.html" class="nav-link">Elektriciteit</a>
@@ -48,11 +52,11 @@
         </div>
       </div>
     </nav>
-    <div id="content">
-      <section class="pgs checkpoints">
+    <div id="content" class="qoute">
+      <section>
         <div class="container">
           <div class="row">
-            <div class="column col-md-5">
+            <div class="column col-md-5 pgs checkpoints">
               <div class="image-checkmarks">
                 <div class="column-project">
                   <div class="image-wrapper">
@@ -77,11 +81,14 @@
                 </div>
               </div>
             </div>
-            <div class="column col-md-6 offset-1">
-              <h3>Vraag vandaag nog uw offerte aan!</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
+            <div class="column col-md-6 offset-md-1 ">
+              <div class="content-wrapper">
+                <h3>Vraag vandaag nog uw offerte aan!</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.</p>
+              </div>
               <div class="component form form-qoute">
                 <form action="">
                   <div class="form-group">

@@ -15,9 +15,13 @@
   <div id="decraene-app">
     <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <a href="index.html">
-        <img src="./../assets/images/logo.png" alt="logo decraene technics">
+        <img src="./../assets/images/logo.png" alt="logo decraene technics" class="navbar-brand" id="logo">
       </a>
-      <div class="collapse navbar-collapse justify-content-end">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="navbar-toggler-icon" src="./../assets/images/icon-menu.svg" alt="hamburger icon" width="10">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
         <ul class="main navbar-nav align-items-center" id="main-navbar">
           <li class="nav-item">
             <a href="service.html" class="nav-link">Elektriciteit</a>
@@ -114,11 +118,11 @@
             </div>
           </div>
       </section>
-      <section class="sections certification">
+      <section class="pgs certification">
         <div class="container">
           <div class="row align-items-center">
             <div class="column col-md-9">
-              <div class="row justify-content-end certification-blocks">
+              <div class="row justify-content-md-end justify-content-around certification-blocks">
                 <div class="column col-md-2 image-wrapper">
                   <img src="./../temp/certification.png" alt="" width="120">
                 </div>
@@ -134,7 +138,6 @@
           </div>
         </div>
       </section>
-
       <section class="pgs cta">
         <div class="container">
           <div class="row align-items-center">

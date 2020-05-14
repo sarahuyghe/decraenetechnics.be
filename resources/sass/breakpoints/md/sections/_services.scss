@@ -25,19 +25,40 @@
     background-color: $color-lightgrey;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 20px;
+
+    @media only screen and (min-width: 768px) {
+      margin-left: 0;
+    }
 
     & img {
       margin-left: -20px;
     }
   }
 
-  & .right img {
-    margin-left: 20px;
+  & .right {
+    margin-right: 20px;
+    margin-left: 0;
+
+
+    @media only screen and (min-width: 768px) {
+      margin-right: 0;
+    }
+
+    img {
+      margin-left: 20px;
+    }
   }
 
   & .second-service {
     background-color: $color-offblack;
     height: 150px;
+    margin-bottom: 20px;
+
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
 
     & p {
       color: $color-white;

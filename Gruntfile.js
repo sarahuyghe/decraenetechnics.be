@@ -29,11 +29,11 @@
 
       concat: {
         app: {
-          options: {
-            separator: '\n',
-            banner: '(function($) {\n',
-            footer: '\n})(jQuery);'
-          },
+          // options: {
+          //   separator: '\n',
+          //   banner: '(function($) {\n',
+          //   // footer: '\n})(jQuery);'
+          // },
           src: [
             'resources/js/app.js'
           ],

@@ -14,9 +14,13 @@
   <div id="decraene-app">
     <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <a href="index.html">
-        <img src="./../assets/images/logo.png" alt="logo decraene technics">
+        <img src="./../assets/images/logo.png" alt="logo decraene technics" class="navbar-brand" id="logo">
       </a>
-      <div class="collapse navbar-collapse justify-content-end">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="navbar-toggler-icon" src="./../assets/images/icon-menu.svg" alt="hamburger icon" width="10">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
         <ul class="main navbar-nav align-items-center" id="main-navbar">
           <li class="nav-item">
             <a href="service.html" class="nav-link">Elektriciteit</a>
@@ -90,7 +94,7 @@
       <section class="pgs column-image-text">
         <div class="container">
           <div class="row align-items-center">
-            <div class="column col-md-5">
+            <div class="column col-md-5 order-md-1 order-2">
               <div class="content-wrapper">
                 <h3>Lichtstudie</h3>
                 <div class="editor-content">
@@ -106,7 +110,7 @@
                 </div>
               </div>
             </div>
-            <div class="column col-md-7 ">
+            <div class="column col-md-7 order-md-2">
               <div class="image-wrapper right">
                 <img src="./../temp/people_meeting.png" alt="people meeting at coffee shop" width="635">
               </div>
@@ -141,7 +145,7 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="column col-md-9">
-              <div class="row justify-content-end certification-blocks">
+              <div class="row justify-content-md-end justify-content-around certification-blocks">
                 <div class="column col-md-2 image-wrapper">
                   <img src="./../temp/certification.png" alt="" width="120">
                 </div>
@@ -160,13 +164,13 @@
       <section class="pgs faq-list">
         <div class="container">
           <div class="row">
-            <div class="column col-md-7">
+            <div class="column col-md-7 order-2">
               <div class="question-wrapper">
                 <p class="question" data-id="question">Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip
                   ex ea commodo
                   consequat?</p>
-                <div class="answer hide">
+                <div class="answer ">
                   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                     anim id est laborum.</p>
@@ -214,7 +218,7 @@
                 </div>
               </div>
             </div>
-            <div class="column col-md-5 text-right">
+            <div class="column col-md-5 text-md-right order-md-2 order-1">
               <p class="titel">
                 Veelgestelde </br>
                 vragen</br>
