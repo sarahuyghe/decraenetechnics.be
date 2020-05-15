@@ -1,4 +1,18 @@
 &.column-image-text {
+
+  & .line {
+    position: relative;
+  }
+
+  & .line::before {
+    border-left: 6px solid red;
+    height: 100%;
+    left: 50%;
+    margin-left: -3px;
+    display: absolute;
+    top: 0;
+  }
+
   & .image-wrapper {
     position: relative;
     display: block;

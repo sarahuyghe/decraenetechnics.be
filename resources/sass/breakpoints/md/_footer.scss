@@ -1,5 +1,4 @@
 footer#site-footer {
-  // footer {
   border-top: solid 1px $color-lightestgrey;
 
   & a,
@@ -27,20 +26,34 @@ footer#site-footer {
     margin-bottom: 20px;
   }
 
-}
+  .main-menu {
+    margin: 20px 0 15px;
 
-.nav {
-  padding: 80px 0;
-}
-
-.madeby {
-  background-color: $color-lightgrey;
-
-  & p,
-  a {
-    line-height: 60px;
-    color: $color-grey;
+    @media only screen and (min-width: 768px) {
+      margin: 0;
+    }
   }
-}
 
-// }
+  .nav {
+    padding: 80px 20px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 80px 0;
+    }
+  }
+
+  .madeby {
+    background-color: $color-lightgrey;
+
+    & p,
+    a {
+      line-height: 30px;
+      color: $color-grey;
+
+      @media only screen and (min-width: 768px) {
+        line-height: 60px;
+      }
+    }
+  }
+
+}
