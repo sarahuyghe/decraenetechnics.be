@@ -4,6 +4,7 @@
   module.exports = function (grunt) {
     // load all Grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+    grunt.loadNpmTasks('grunt-contrib-uglify-es');
 
     grunt.initConfig({
       compass: {

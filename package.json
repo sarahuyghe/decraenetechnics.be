@@ -17,5 +17,8 @@
         "grunt-contrib-watch": "^1.1.0",
         "grunt-rsync": "^3.0.0",
         "matchdep": "^2.0.0"
+    },
+    "dependencies": {
+        "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony"
     }
 }
