@@ -1,101 +1,100 @@
-nav#nav-main {
-  &.scrolling {}
-}
+nav {
 
-.phonenumber {
-  position: relative;
-  padding-left: 20px;
-}
-
-.phonenumber::after {
-  content: "";
-  background-image: url(./../../../../../assets/images/phone-icon.svg);
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 50px;
-  position: absolute;
-  top: 5%;
-  left: 0;
-}
-
-.navbar {
-  background-color: $color-white;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-  height: 90px;
-
-  @media only screen and (min-width: 768px) {
-    height: 140px;
+  .phonenumber {
+    position: relative;
+    padding-left: 20px;
   }
 
-  & .navbar-brand {
+  .phonenumber::after {
+    content: "";
+    background-image: url(./../../../../../assets/images/phone-icon.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 50px;
     position: absolute;
-    top: 0px;
-    width: 150px;
+    top: 5%;
+    left: 0;
+  }
+
+  .navbar {
+    background-color: $color-white;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    height: 90px;
 
     @media only screen and (min-width: 768px) {
-      width: fit-content;
+      height: 140px;
+    }
+
+    & .navbar-brand {
+      position: absolute;
+      top: 0px;
+      width: 150px;
+
+      @media only screen and (min-width: 768px) {
+        width: fit-content;
+      }
     }
   }
-}
 
-.main {
-  margin-top: 25px;
-
-  & .nav-link {
-    color: $color-offblack;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 40px;
-    margin: 0 30px;
-    transition: .25s all;
-  }
-
-  & .nav-link:hover {
-    color: $color-orange
-  }
-
-  & .btn {
-    color: $color-white;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-right: 20px;
-  }
-
-  & .nav-link .active {
-    color: $color-orange
-  }
-}
-
-.meta {
-  text-transform: uppercase;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px 20px;
-
-  & .nav-item {
-    font-size: 1.1rem;
-    line-height: 14px;
-    margin: 0 7.5px;
-    letter-spacing: 0.05em;
+  .main {
+    margin-top: 25px;
 
     & .nav-link {
-      color: $color-grey;
-      letter-spacing: 0.05em;
-      transition: .5s all;
-
+      color: $color-offblack;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 40px;
+      margin: 0 30px;
+      transition: .25s all;
     }
 
     & .nav-link:hover {
       color: $color-orange
     }
 
+    & .btn {
+      color: $color-white;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-right: 20px;
+    }
+
     & .nav-link .active {
       color: $color-orange
     }
   }
-}
 
-.scrolling {
-  display: none;
+  .meta {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 20px;
+
+    & .nav-item {
+      font-size: 1.1rem;
+      line-height: 14px;
+      margin: 0 7.5px;
+      letter-spacing: 0.05em;
+
+      & .nav-link {
+        color: $color-grey;
+        letter-spacing: 0.05em;
+        transition: .5s all;
+
+      }
+
+      & .nav-link:hover {
+        color: $color-orange
+      }
+
+      & .nav-link .active {
+        color: $color-orange
+      }
+    }
+  }
+
+  .scrolling {
+    display: none;
+  }
 }

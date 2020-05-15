@@ -1,6 +1,5 @@
-footer#site-footer {}
-
-footer {
+footer#site-footer {
+  // footer {
   border-top: solid 1px $color-lightestgrey;
 
   & a,
@@ -43,3 +42,5 @@ footer {
     color: $color-grey;
   }
 }
+
+// }

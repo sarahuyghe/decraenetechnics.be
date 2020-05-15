@@ -3,7 +3,6 @@
 .idea
 node_modules
 var
-temp
 
 style-login.css
 style.css
