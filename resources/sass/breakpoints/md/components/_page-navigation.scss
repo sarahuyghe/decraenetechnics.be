@@ -1,20 +1,20 @@
 &.page-navigation {
-  & nav {
+  nav {
     display: flex;
   }
 
-  & p,
+  p,
   .page-link {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $color-grey;
   }
 
-  & p {
+  p {
     padding-right: 0.75rem;
   }
 
-  & .page-link {
+  .page-link {
     border: none;
     font-size: 1.2rem;
     line-height: 20px;
@@ -24,12 +24,12 @@
     margin: 0;
   }
 
-  & .active {
+  .active {
     color: $color-offblack;
     font-weight: 600;
   }
 
-  & .page-link::after {
+  .page-link::after {
     content: "/";
     padding: 0 0.75rem;
     color: $color-grey;

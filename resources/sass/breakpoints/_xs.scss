@@ -3,9 +3,11 @@
 @import "breakpoints/xs/general";
 
 #content {
-    .pgs {
-        @import "breakpoints/xs/sections/cta";
-    }
+  .pgs {
+    @import "breakpoints/xs/sections/cta";
+    @import "breakpoints/xs/sections/certification";
 
-    @import "breakpoints/xs/pages/front";
+  }
+
+  @import "breakpoints/xs/pages/front";
 }

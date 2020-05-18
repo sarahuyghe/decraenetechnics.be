@@ -1,12 +1,10 @@
 &.certification {
   position: relative;
 
-  & .certification-blocks {
-    @media only screen and (min-width: 768px) {
-      margin-right: 50px;
-    }
+  .certification-blocks {
+    margin-right: 50px;
 
-    & .image-wrapper {
+    .image-wrapper {
       background-color: $color-white;
       margin: 0 10px;
       width: fit-content;
@@ -14,24 +12,19 @@
       margin: 15px;
 
 
-      & img {
+      img {
         padding: 15px 0;
-        width: 90px;
-
-
-        @media only screen and (min-width: 768px) {
-          width: fit-content;
-        }
+        width: fit-content;
       }
     }
   }
 
-  & p {
+  p {
     font-size: 1.3rem;
     line-height: 19px;
   }
 
-  & span {
+  span {
     font-weight: 700;
     color: $color-offblack;
   }
@@ -43,14 +36,8 @@
     top: 35px;
     bottom: 35px;
     left: 0;
-    height: 80px;
     z-index: -1;
-    width: 100%;
-
-
-    @media only screen and (min-width: 768px) {
-      width: 65%;
-      height: auto;
-    }
+    width: 60%;
+    height: auto;
   }
 }

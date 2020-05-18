@@ -1,0 +1,10 @@
+&.certification {
+  .image-wrapper img {
+    width: 90px;
+  }
+
+  &::before {
+    width: 100%;
+    height: 80px;
+  }
+}

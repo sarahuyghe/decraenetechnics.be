@@ -7,22 +7,28 @@
     text-transform: uppercase;
     color: $color-lightgrey;
 
-    @media only screen and (min-width: 768px) {
-      font-size: 5rem;
+    @media only screen and (min-width: 992px) {
       line-height: 50px;
+      font-size: 4.5rem;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+      font-size: 5rem;
     }
   }
 
   .question-wrapper {
     border-bottom: solid $color-grey 1px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+
 
     .question {
       font-weight: 600;
       color: $color-offblack;
-      margin: 30px 0;
       position: relative;
       padding-left: 30px;
+      margin-bottom: 30px;
 
       @media only screen and (min-width: 768px) {
         padding-left: 0;
@@ -42,16 +48,25 @@
       transform: rotate(-90deg);
 
       @media only screen and (min-width: 768px) {
+        left: -30px;
+      }
+
+      @media only screen and (min-width: 1200px) {
         left: -35px;
       }
     }
 
-    & .answer p {
-      padding: 10px 0;
-      padding-left: 30px;
+    & .answer {
+      padding-bottom: 20px;
 
-      @media only screen and (min-width: 768px) {
-        padding-left: 0;
+      p {
+        padding: 10px 0;
+        padding-left: 30px;
+
+
+        @media only screen and (min-width: 768px) {
+          padding-left: 0;
+        }
       }
     }
 

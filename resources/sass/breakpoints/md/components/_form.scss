@@ -5,7 +5,7 @@
     margin-top: 50px;
   }
 
-  & .form-group {
+  .form-group {
     position: relative;
     margin: 10px 0;
 
@@ -21,7 +21,7 @@
     }
   }
 
-  & .form-check {
+  .form-check {
     margin: 10px 0;
 
     & a {
@@ -46,7 +46,7 @@
     }
   }
 
-  & input,
+  input,
   textarea {
     border-radius: 25px;
     border: 1px solid $color-offblack;
@@ -64,74 +64,75 @@
     }
   }
 
-  & textarea {
+  textarea {
     padding: 0 25px;
     margin-bottom: 20px;
   }
-}
 
-.search-form .form-group::after {
-  content: "";
-  background-image: url(./../../../../../assets/images/search.svg);
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 50px;
-  position: absolute;
-  top: 25%;
-  right: 20px;
-}
+  .search-form .form-group::after {
+    content: "";
+    background-image: url(./../../../../../assets/images/search.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 50px;
+    position: absolute;
+    top: 25%;
+    right: 20px;
+  }
 
-.form-check label {
-  padding-left: 15px;
-}
+  .form-check label {
+    padding-left: 15px;
+  }
 
-.form-check input[type="checkbox"],
-.form-check input[type="radio"] {
-  opacity: 0;
-}
+  .form-check input[type="checkbox"],
+  .form-check input[type="radio"] {
+    opacity: 0;
+  }
 
-.form-check input[type="checkbox"]+label::after,
-.form-check input[type="radio"]+label::after {
-  opacity: 0;
-}
+  .form-check input[type="checkbox"]+label::after,
+  .form-check input[type="radio"]+label::after {
+    opacity: 0;
+  }
 
-.form-check input[type="checkbox"]:checked+label::after,
-.form-check input[type="radio"]:checked+label::after {
-  opacity: 1;
-}
+  .form-check input[type="checkbox"]:checked+label::after,
+  .form-check input[type="radio"]:checked+label::after {
+    opacity: 1;
+  }
 
-.form-check label::before,
-.form-check label::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-}
+  .form-check label::before,
+  .form-check label::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+  }
 
-.form-check label::before {
-  height: 20px;
-  width: 20px;
-  border: 1px solid $color-offblack;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-}
+  .form-check label::before {
+    height: 20px;
+    width: 20px;
+    border: 1px solid $color-offblack;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+  }
 
-.form-check label:after {
-  background-image: url(./../../../../../assets/images/check-orange.svg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 4px;
-  width: 18px;
-  height: 21px;
-  background-size: 18px 21px;
-  top: -2.5px;
-}
+  .form-check label:after {
+    background-image: url(./../../../../../assets/images/check-orange.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4px;
+    width: 18px;
+    height: 21px;
+    background-size: 18px 21px;
+    top: -2.5px;
+  }
 
-.form-check-inline label::after {
-  top: 4px;
-  // left: 9px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: $color-orange;
+  .form-check-inline label::after {
+    top: 4px;
+    // left: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $color-orange;
+  }
+
 }

@@ -6,7 +6,7 @@
     flex-direction: row;
   }
 
-  & p:first-of-type {
+  p:first-of-type {
     text-indent: 0.75rem;
 
     @media only screen and (min-width: 768px) {
@@ -14,7 +14,7 @@
     }
   }
 
-  & p {
+  p {
     font-size: 1.2rem;
     line-height: 30px;
     letter-spacing: 0.05em;
@@ -25,21 +25,21 @@
     }
   }
 
-  & .active {
+  .active {
     color: $color-offblack;
   }
 
-  & .tag {
+  .tag {
     display: inline;
     text-indent: 0.75rem;
   }
 
-  & .tag::after {
+  .tag::after {
     content: " / ";
     color: $color-grey;
   }
 
-  & .filter-tags {
+  .filter-tags {
     display: flex;
     flex-wrap: wrap;
 

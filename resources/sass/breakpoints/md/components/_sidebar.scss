@@ -14,17 +14,17 @@
     margin-right: -200px;
   }
 
-  & div {
+  div {
     height: 50%;
     display: flex;
     align-items: center;
 
-    & img {
+    img {
       margin: 0 15px;
 
     }
 
-    & a,
+    a,
     p {
       color: $color-white;
       font-size: 1.6rem;
@@ -34,7 +34,7 @@
 
   }
 
-  & div:first-child {
+  div:first-child {
     border-bottom: 1px solid rgba(51, 51, 51, 0.05);
   }
 }
