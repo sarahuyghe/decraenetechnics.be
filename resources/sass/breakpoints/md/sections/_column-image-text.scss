@@ -1,10 +1,10 @@
 &.column-image-text {
 
-  & .line {
+  .line {
     position: relative;
   }
 
-  & .line::before {
+  .line::before {
     border-left: 6px solid red;
     height: 100%;
     left: 50%;
@@ -13,7 +13,7 @@
     top: 0;
   }
 
-  & .image-wrapper {
+  .image-wrapper {
     position: relative;
     display: block;
     background-color: $color-lightgrey;
@@ -21,7 +21,7 @@
     padding-bottom: 15px;
     margin-left: 15px;
 
-    & img {
+    img {
       margin-left: -15px;
     }
 
@@ -29,19 +29,19 @@
       padding-top: 20px;
       padding-bottom: 20px;
 
-      & img {
+      img {
         margin-left: -20px;
       }
 
     }
   }
 
-  & h3,
+  h2,
   p {
     margin-bottom: 15px;
   }
 
-  & .right {
+  .right {
     margin-left: 0;
     margin-right: 15px;
 
@@ -51,7 +51,7 @@
   }
 
   @media only screen and (min-width: 768px) {
-    & .right img {
+    .right img {
       margin-left: 20px;
     }
   }

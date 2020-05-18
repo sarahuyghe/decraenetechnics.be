@@ -10,6 +10,9 @@
 {
   const $questions = document.querySelectorAll(".question");
   const $sidebar = document.querySelector(".sidebar");
+  const $metaMenu = document.querySelector(".meta");
+  const $scrollPosition = 50;
+
 
 
   const onClickQuestion = e => {
@@ -30,11 +33,23 @@
     }
   }
 
+  const checkposition = () => {
+    var windowY = window.scrollY
+    if (windowY < $scrollPosition) {
+      $metaMenu.classList.remove('scrolling')
+    } else {
+      $metaMenu.classList.add('scrolling')
+    }
+  }
+
   init = () => {
+    window.addEventListener(`scroll`, checkposition)
     $questions.forEach((question) =>
       question.addEventListener(`click`, onClickQuestion)
     );
     $sidebar.addEventListener(`click`, onClickSidebar)
+
+
   };
   init();
 }

@@ -13,13 +13,13 @@
     }
   }
 
-  & .left-top,
+  .left-top,
   .right-top,
   .right-bottom {
     position: relative;
   }
 
-  & .left-top::before {
+  .left-top::before {
     position: absolute;
     content: "";
     background-color: $color-offblack;
@@ -30,7 +30,7 @@
     z-index: -1;
   }
 
-  & .right-top::before {
+  .right-top::before {
     position: absolute;
     content: "";
     background-color: $color-offblack;
@@ -40,7 +40,7 @@
     right: 15px;
   }
 
-  & .right-bottom::before {
+  .right-bottom::before {
     position: absolute;
     content: "";
     background-color: $color-offblack;
@@ -48,5 +48,43 @@
     height: 60px;
     bottom: -20px;
     right: 15px;
+  }
+
+  .project-wrapper {
+    position: relative;
+  }
+
+  .project-wrapper:first-of-type .row::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    background-color: $color-lightestgrey;
+    height: 1px;
+    left: 45%;
+    z-index: -4;
+    top: 100%;
+  }
+
+  .project-wrapper:nth-of-type(2) .row::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: $color-lightestgrey;
+    height: 166.5%;
+    left: 45%;
+    z-index: -4;
+    top: -33%;
+    bottom: -33%;
+  }
+
+  .project-wrapper:last-of-type .row::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    background-color: $color-lightestgrey;
+    height: 1px;
+    left: 45%;
+    z-index: -4;
+    top: 0;
   }
 }

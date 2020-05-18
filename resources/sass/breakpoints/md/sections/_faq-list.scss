@@ -39,7 +39,7 @@
       position: absolute;
       display: inline-block;
       content: "";
-      background-image: url(./../../../../../assets/images/arrow.svg);
+      background-image: image-url('arrow.svg');
       background-repeat: no-repeat;
       top: 0;
       left: 0px;
@@ -56,7 +56,7 @@
       }
     }
 
-    & .answer {
+    .answer {
       padding-bottom: 20px;
 
       p {
@@ -70,7 +70,7 @@
       }
     }
 
-    & .hide {
+    .hide {
       display: none;
 
     }

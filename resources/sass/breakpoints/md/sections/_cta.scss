@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 0;
 
-  & img {
+  img {
     margin-bottom: -19px;
 
 
@@ -15,14 +15,14 @@
     }
   }
 
-  & .content-wrapper {
+  .content-wrapper {
     margin-top: 40px;
 
     @media only screen and (min-width: 768px) {
       margin-left: 50px;
     }
 
-    & .editor-content {
+    .editor-content {
       margin: 20px 0;
     }
   }

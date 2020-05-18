@@ -1,0 +1,16 @@
+&.service {
+  .column-image-text {
+    position: relative;
+  }
+
+  .column-image-text::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: $color-lightestgrey;
+    height: 100%;
+    left: 50%;
+    z-index: -4;
+    top: -50%;
+  }
+}

@@ -8,7 +8,7 @@
     outline-offset: -45px;
     position: relative;
 
-    & .family {
+    .family {
       margin-bottom: 45px;
       margin-top: 50px;
 
@@ -30,7 +30,7 @@
       }
     }
 
-    & .logo {
+    .logo {
       margin-top: 65px;
 
       @media only screen and (min-width: 768px) {
@@ -49,7 +49,7 @@
       }
     }
 
-    & .services {
+    .services {
       margin-top: 30px;
 
       @media only screen and (min-width: 768px) {
@@ -57,7 +57,7 @@
       }
     }
 
-    & .service-wrapper {
+    .service-wrapper {
       margin-top: 20px;
 
       @media only screen and (min-width: 768px) {
@@ -71,13 +71,13 @@
 
 
 
-    & p {
+    p {
       color: $color-white;
       font-size: 1.2rem;
       line-height: 15px;
     }
 
-    & .discover-services {
+    .discover-services {
       position: absolute;
       font-weight: 600;
       font-size: 1.1rem;
@@ -97,6 +97,28 @@
   }
 
   .graphic-house {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: $color-lightestgrey;
+      height: 175px;
+      bottom: 8.5%;
+      left: 50%;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: $color-lightestgrey;
+      height: 145px;
+      top: -16%;
+      left: 50%;
+    }
+
     .graphic-wrapper {
       position: relative;
       margin-top: 125px;
@@ -141,5 +163,19 @@
     .smart-home {
       left: 22.5%
     }
+  }
+
+  .column-image-text {
+    position: relative;
+  }
+
+  .column-image-text::before {
+    content: "";
+    position: absolute;
+    background-color: $color-lightestgrey;
+    width: 1px;
+    height: 100%;
+    top: -35%;
+    left: 50%;
   }
 }

@@ -28,7 +28,7 @@
     content: "";
     display: inline-block;
     position: relative;
-    background-image: url(./../../../../../assets/images/arrow.svg);
+    background-image: image-url('arrow.svg');
     background-repeat: no-repeat;
 
     transform: rotate(-180deg);
@@ -40,7 +40,7 @@
     content: "";
     display: inline-block;
     position: relative;
-    background-image: url(./../../../../../assets/images/arrow.svg);
+    background-image: image-url('arrow.svg');
     background-repeat: no-repeat;
     width: 12px;
     height: 16px;

@@ -1,15 +1,15 @@
 &.services {
 
-  & .main-services,
+  .main-services,
   .second-services {
     margin-top: 50px;
     margin-bottom: 150px;
   }
 
-  & .main-service {
+  .main-service {
     position: relative;
 
-    & p {
+    p {
       font-size: 2.8rem;
       line-height: 38px;
       color: $color-offblack;
@@ -20,7 +20,7 @@
     }
   }
 
-  & .image-wrapper {
+  .image-wrapper {
     display: block;
     background-color: $color-lightgrey;
     padding-top: 20px;
@@ -31,12 +31,12 @@
       margin-left: 0;
     }
 
-    & img {
+    img {
       margin-left: -20px;
     }
   }
 
-  & .right {
+  .right {
     margin-right: 20px;
     margin-left: 0;
 
@@ -50,7 +50,7 @@
     }
   }
 
-  & .second-service {
+  .second-service {
     background-color: $color-offblack;
     height: 150px;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@
       margin-bottom: 0;
     }
 
-    & p {
+    p {
       color: $color-white;
       font-weight: 600;
       font-size: 2.8rem;

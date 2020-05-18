@@ -20,7 +20,7 @@ nav {
     }
   }
 
-  & .navbar-brand {
+  .navbar-brand {
     position: absolute;
     top: 0px;
     width: 75px;
@@ -43,7 +43,7 @@ nav {
 
   .phonenumber::after {
     content: "";
-    background-image: url(./../../../../../assets/images/phone-icon.svg);
+    background-image: image-url('phone-icon.svg');
     background-repeat: no-repeat;
     width: 15px;
     height: 50px;
@@ -55,7 +55,7 @@ nav {
   .main {
     margin-top: 25px;
 
-    & .nav-link {
+    .nav-link {
       color: $color-offblack;
       font-size: 1.6rem;
       font-weight: 600;
@@ -74,18 +74,18 @@ nav {
       }
     }
 
-    & .nav-link:hover {
+    .nav-link:hover {
       color: $color-orange;
     }
 
-    & .btn {
+    .btn {
       color: $color-white;
       font-size: 1.2rem;
       font-weight: 700;
       margin-right: 20px;
     }
 
-    & .nav-link .active {
+    .nav-link .active {
       color: $color-orange;
     }
   }
@@ -104,23 +104,23 @@ nav {
       border: none;
     }
 
-    & .nav-item {
+    .nav-item {
       font-size: 1.1rem;
       line-height: 14px;
       margin: 0 7.5px;
       letter-spacing: 0.05em;
 
-      & .nav-link {
+      .nav-link {
         color: $color-grey;
         letter-spacing: 0.05em;
         transition: 0.5s all;
       }
 
-      & .nav-link:hover {
+      .nav-link:hover {
         color: $color-orange;
       }
 
-      & .nav-link .active {
+      .nav-link .active {
         color: $color-orange;
       }
     }

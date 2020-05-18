@@ -1,28 +1,28 @@
 footer#site-footer {
   border-top: solid 1px $color-lightestgrey;
 
-  & a,
+  a,
   p {
     font-size: 1.2rem;
   }
 
-  & a {
+  a {
     color: $color-offblack;
   }
 
-  & p {
+  p {
     line-height: 20px;
   }
 
-  & li {
+  li {
     line-height: 28px;
   }
 
-  & span {
+  span {
     font-weight: 700;
   }
 
-  & img {
+  img {
     margin-bottom: 20px;
   }
 
@@ -45,7 +45,7 @@ footer#site-footer {
   .madeby {
     background-color: $color-lightgrey;
 
-    & p,
+    p,
     a {
       line-height: 30px;
       color: $color-grey;

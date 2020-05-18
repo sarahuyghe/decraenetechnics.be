@@ -6,6 +6,10 @@
       margin: 0;
     }
 
+    a {
+      color: $color-offblack;
+    }
+
     .image-wrapper {
       position: relative;
       background: $color-offblack;
@@ -18,7 +22,7 @@
       }
     }
 
-    & img {
+    img {
       width: 375px;
       margin-left: -10px;
 
@@ -27,7 +31,7 @@
       }
     }
 
-    & .content-wrapper {
+    .content-wrapper {
       margin-top: 15px;
 
       @media only screen and (min-width: 768px) {

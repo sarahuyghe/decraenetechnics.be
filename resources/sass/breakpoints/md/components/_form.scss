@@ -9,7 +9,7 @@
     position: relative;
     margin: 10px 0;
 
-    & label {
+    label {
       position: absolute;
       right: 20px;
       top: -5px;
@@ -24,12 +24,12 @@
   .form-check {
     margin: 10px 0;
 
-    & a {
+    a {
       color: $color-orange;
       text-decoration: underline;
     }
 
-    & label {
+    label {
       font-size: 1.5rem;
       line-height: 20px;
       margin-right: 20px;
@@ -37,11 +37,11 @@
   }
 
   .error {
-    & label {
+    label {
       color: $color-red;
     }
 
-    & input {
+    input {
       border-color: $color-red;
     }
   }
@@ -71,7 +71,7 @@
 
   .search-form .form-group::after {
     content: "";
-    background-image: url(./../../../../../assets/images/search.svg);
+    background-image: image-url('search.svg');
     background-repeat: no-repeat;
     width: 15px;
     height: 50px;
@@ -116,7 +116,7 @@
   }
 
   .form-check label:after {
-    background-image: url(./../../../../../assets/images/check-orange.svg);
+    background-image: image-url('check-orange.svg');
     background-repeat: no-repeat;
     position: absolute;
     left: 4px;
@@ -128,7 +128,6 @@
 
   .form-check-inline label::after {
     top: 4px;
-    // left: 9px;
     width: 12px;
     height: 12px;
     border-radius: 50%;

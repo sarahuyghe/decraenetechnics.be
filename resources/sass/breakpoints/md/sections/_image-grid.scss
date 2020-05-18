@@ -1,19 +1,19 @@
 &.image-grid {
-  & .column {
+  .column {
     padding: 6px;
     max-width: 20%;
   }
 
-  & .image-wrapper {
+  .image-wrapper {
     margin-top: 12px;
   }
 
-  & img {
+  img {
     filter: grayscale(100%);
     transition: all 1s;
   }
 
-  & img:hover {
+  img:hover {
     filter: grayscale(0%)
   }
 }

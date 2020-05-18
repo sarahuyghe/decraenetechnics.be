@@ -1,5 +1,5 @@
 &.contact {
-  & .image-wrapper {
+  .image-wrapper {
     position: relative;
     display: block;
     background-color: $color-lightgrey;
@@ -12,16 +12,16 @@
       margin-top: 100px;
     }
 
-    & img {
+    img {
       margin-left: -20px;
     }
   }
 
-  & .content-wrapper div {
+  .content-wrapper div {
     margin: 20px 0;
   }
 
-  & .form {
+  .form {
     margin-top: 40px;
 
     @media only screen and (min-width: 768px) {

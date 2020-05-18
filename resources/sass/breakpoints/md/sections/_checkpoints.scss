@@ -1,5 +1,5 @@
 &.checkpoints {
-  & .image-checkmarks {
+  .image-checkmarks {
     h5 {
       line-height: 30px;
       margin: 30px 0;
@@ -19,7 +19,7 @@
       }
     }
 
-    & img {
+    img {
       margin-left: -10px;
       width: 400px;
 
@@ -37,7 +37,7 @@
 
   .checkpoint::before {
     content: "";
-    background-image: url(../../../../../assets/images/check.svg);
+    background-image: image-url('check.svg');
     width: 30px;
     height: 24px;
     position: absolute;

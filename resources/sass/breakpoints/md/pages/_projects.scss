@@ -1,0 +1,27 @@
+&.projects {
+  .row {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      background-color: $color-lightestgrey;
+      height: 1px;
+      z-index: -4;
+      left: 20%;
+      top: 35%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: $color-lightestgrey;
+      height: 120%;
+      z-index: -4;
+      left: 49%;
+      top: 35%;
+    }
+  }
+}
