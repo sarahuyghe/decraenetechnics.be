@@ -1,13 +1,21 @@
-// @import "breakpoints/lg/navigation";
-// @import "breakpoints/lg/footer";
-// @import "breakpoints/lg/general";
+@import "breakpoints/lg/navigation";
+
+.component {
+  @import "breakpoints/md/components/filter";
+}
 
 #content {
   .pgs {
     // @import "breakpoints/lg/sections/cta";
     @import "breakpoints/lg/sections/certification";
+    @import "breakpoints/lg/sections/faq-list";
+    @import "breakpoints/lg/sections/posts";
+    @import "breakpoints/lg/sections/services";
+
 
   }
 
-  // @import "breakpoints/lg/pages/front";
+  @import "breakpoints/lg/pages/contact";
+  @import "breakpoints/lg/pages/about";
+
 }

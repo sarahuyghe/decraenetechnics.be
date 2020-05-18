@@ -6,18 +6,11 @@ nav {
   padding-right: 0;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
 
-  @media only screen and (min-width: 992px) {
-    height: 140px;
-    padding: 0.5rem 1rem;
-  }
+
 
   .navbar-collapse {
     background-color: $color-white;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
-
-    @media only screen and (min-width: 992px) {
-      box-shadow: unset;
-    }
   }
 
   .navbar-brand {
@@ -25,20 +18,12 @@ nav {
     top: 0px;
     width: 75px;
     z-index: 10000;
-
-    @media only screen and (min-width: 992px) {
-      width: fit-content;
-    }
   }
 
   .phonenumber {
     position: relative;
     padding-left: 20px;
-    display: none;
-
-    @media only screen and (min-width: 768px) {
-      display: unset;
-    }
+    display: unset;
   }
 
   .phonenumber::after {
@@ -62,16 +47,6 @@ nav {
       line-height: 40px;
       margin: 0 30px;
       transition: 0.25s all;
-
-      @media only screen and (min-width: 992px) {
-        margin: 0 20px;
-
-      }
-
-      @media only screen and (min-width: 1200px) {
-        margin: 0 30px;
-
-      }
     }
 
     .nav-link:hover {
@@ -96,14 +71,6 @@ nav {
     border-top: 1px solid $color-grey;
     padding-top: 10px;
 
-    @media only screen and (min-width: 992px) {
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 0;
-      border: none;
-    }
-
     .nav-item {
       font-size: 1.1rem;
       line-height: 14px;
@@ -127,6 +94,6 @@ nav {
   }
 
   .scrolling {
-    display: none;
+    padding-top: -30px;
   }
 }

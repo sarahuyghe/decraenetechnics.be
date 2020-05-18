@@ -9,60 +9,32 @@
     position: relative;
 
     .family {
-      margin-bottom: 45px;
       margin-top: 50px;
 
-      @media only screen and (min-width: 768px) {
-        margin-bottom: 0;
-        bottom: 0;
-      }
+      margin-bottom: 0;
+      bottom: 0;
 
 
       img {
-        width: 200px;
-        margin: 0 auto;
-
-        @media only screen and (min-width: 768px) {
-          width: fit-content;
-          margin: unset;
-
-        }
+        width: fit-content;
       }
     }
 
     .logo {
-      margin-top: 65px;
 
-      @media only screen and (min-width: 768px) {
-        margin-top: 0;
-      }
+      margin-top: 0;
 
       img {
-        width: 250px;
-        margin: 0 auto;
-
-        @media only screen and (min-width: 768px) {
-          width: fit-content;
-          margin: unset;
-
-        }
+        width: fit-content;
       }
     }
 
     .services {
-      margin-top: 30px;
-
-      @media only screen and (min-width: 768px) {
-        margin-top: 60px;
-      }
+      margin-top: 60px;
     }
 
     .service-wrapper {
-      margin-top: 20px;
-
-      @media only screen and (min-width: 768px) {
-        margin-top: 0;
-      }
+      margin-top: 0;
 
       img {
         display: inline-block;

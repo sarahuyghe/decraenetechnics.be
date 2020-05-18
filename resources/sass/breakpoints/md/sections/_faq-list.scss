@@ -2,20 +2,11 @@
 
   .titel {
     font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 40px;
+
     text-transform: uppercase;
     color: $color-lightgrey;
-
-    @media only screen and (min-width: 992px) {
-      line-height: 50px;
-      font-size: 4.5rem;
-
-    }
-
-    @media only screen and (min-width: 1200px) {
-      font-size: 5rem;
-    }
+    line-height: 50px;
+    font-size: 3.5rem;
   }
 
   .question-wrapper {
@@ -27,12 +18,8 @@
       font-weight: 600;
       color: $color-offblack;
       position: relative;
-      padding-left: 30px;
       margin-bottom: 30px;
-
-      @media only screen and (min-width: 768px) {
-        padding-left: 0;
-      }
+      padding-left: 0;
     }
 
     .question::after {
@@ -42,18 +29,10 @@
       background-image: image-url('arrow.svg');
       background-repeat: no-repeat;
       top: 0;
-      left: 0px;
       width: 16px;
       height: 16px;
       transform: rotate(-90deg);
-
-      @media only screen and (min-width: 768px) {
-        left: -30px;
-      }
-
-      @media only screen and (min-width: 1200px) {
-        left: -35px;
-      }
+      left: -30px;
     }
 
     .answer {
@@ -61,18 +40,12 @@
 
       p {
         padding: 10px 0;
-        padding-left: 30px;
-
-
-        @media only screen and (min-width: 768px) {
-          padding-left: 0;
-        }
+        padding-left: 0;
       }
     }
 
     .hide {
       display: none;
-
     }
   }
 }

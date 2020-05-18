@@ -1,0 +1,10 @@
+&.faq-list {
+  .titel {
+    font-size: 5rem;
+  }
+
+  .question::after {
+    left: -35px;
+
+  }
+}

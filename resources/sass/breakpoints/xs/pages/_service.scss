@@ -1,0 +1,5 @@
+&.service {
+  .column-image-text::before {
+    content: unset
+  }
+}

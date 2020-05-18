@@ -1,2 +1,42 @@
 &.front {
+  .header {
+    .family {
+      margin-bottom: 45px;
+
+      img {
+        width: 200px;
+        margin: 0 auto;
+
+      }
+    }
+
+    .logo {
+      margin-top: 65px;
+
+      img {
+        width: 250px;
+        margin: 0 auto
+      }
+    }
+
+    .services {
+      margin-top: 30px
+    }
+
+    .service-wrapper {
+      margin-top: 20px;
+    }
+  }
+
+  .graphic-house::before {
+    content: none;
+  }
+
+  .graphic-house h2::before {
+    content: none;
+  }
+
+  .column-image-text::before {
+    content: none
+  }
 }

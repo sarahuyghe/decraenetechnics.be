@@ -1,0 +1,7 @@
+&.projects {
+
+  .row::before,
+  .row::after {
+    content: none
+  }
+}

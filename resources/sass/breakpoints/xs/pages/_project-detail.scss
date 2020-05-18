@@ -1,0 +1,31 @@
+&.project-detail {
+
+  .intro .image-wrapper {
+    position: relative;
+    top: 0
+  }
+
+  .title-left {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .project-wrapper {
+    margin: 50px 0;
+  }
+
+  .project-wrapper .image-wrapper {
+    margin-top: 50px;
+  }
+
+  .project-wrapper:first-of-type .row::after,
+  .project-wrapper:nth-of-type(2) .row::before,
+  .project-wrapper:last-of-type .row::before {
+    content: none
+  }
+
+  .right-top::before,
+  .right-bottom::before {
+    right: -15px
+  }
+}

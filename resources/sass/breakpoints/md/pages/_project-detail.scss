@@ -1,4 +1,25 @@
 &.project-detail {
+  position: relative;
+
+  .intro {
+
+    & .image-wrapper {
+      position: absolute;
+      left: 0;
+      top: -50px;
+
+
+      &::before {
+        position: relative;
+        display: block;
+        background-color: $color-lightgrey;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 15px;
+      }
+    }
+  }
+
   .project-wrapper {
     margin: 100px 0;
   }

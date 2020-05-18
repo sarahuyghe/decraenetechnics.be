@@ -3,14 +3,14 @@
     position: relative;
   }
 
-  .column-image-text::before {
+  .column-image-text:nth-of-type(2) .row::before {
     content: "";
     position: absolute;
     width: 1px;
     background-color: $color-lightestgrey;
-    height: 100%;
     left: 50%;
     z-index: -4;
-    top: -50%;
+    height: 50vh;
+    bottom: 0;
   }
 }

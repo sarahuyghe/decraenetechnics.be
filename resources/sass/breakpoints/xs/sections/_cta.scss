@@ -1,2 +1,15 @@
 &.cta {
+  img {
+    margin-bottom: -19px
+  }
+
+  .content-wrapper {
+    margin-left: 0
+  }
+
+  &::before {
+    top: 0;
+    width: 100%;
+  }
+
 }

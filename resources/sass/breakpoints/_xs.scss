@@ -2,12 +2,33 @@
 @import "breakpoints/xs/footer";
 @import "breakpoints/xs/general";
 
+.component {
+  @import "breakpoints/xs/components/filter";
+
+}
+
 #content {
   .pgs {
     @import "breakpoints/xs/sections/cta";
     @import "breakpoints/xs/sections/certification";
-
+    @import "breakpoints/xs/sections/column-image-text";
+    @import "breakpoints/xs/sections/modal";
+    @import "breakpoints/xs/sections/image-grid";
+    @import "breakpoints/xs/sections/faq-list";
+    @import "breakpoints/xs/sections/blog-post";
+    @import "breakpoints/xs/sections/faq-posts";
+    @import "breakpoints/xs/sections/posts";
+    @import "breakpoints/xs/sections/projects";
+    @import "breakpoints/xs/sections/services";
   }
 
   @import "breakpoints/xs/pages/front";
+  @import "breakpoints/xs/pages/qoute";
+  @import "breakpoints/xs/pages/about";
+  @import "breakpoints/xs/pages/projects";
+  @import "breakpoints/xs/pages/service";
+  @import "breakpoints/xs/pages/project-detail";
+  @import "breakpoints/xs/pages/contact";
+
+
 }

@@ -10,7 +10,7 @@
 {
   const $questions = document.querySelectorAll(".question");
   const $sidebar = document.querySelector(".sidebar");
-  const $metaMenu = document.querySelector(".meta");
+  const $metaMenu = document.querySelector("nav");
   const $scrollPosition = 50;
 
 
