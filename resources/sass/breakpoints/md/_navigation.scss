@@ -1,23 +1,18 @@
 nav {
   background-color: $color-white;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-  height: 40px;
-  padding-left: 0;
-  padding-right: 0;
+  height: 140px;
+  padding: 0.5rem 1rem;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
 
-
-
   .navbar-collapse {
-    background-color: $color-white;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: unset;
   }
 
   .navbar-brand {
     position: absolute;
     top: 0px;
-    width: 75px;
     z-index: 10000;
+    width: fit-content;
   }
 
   .phonenumber {
@@ -45,8 +40,9 @@ nav {
       font-size: 1.6rem;
       font-weight: 600;
       line-height: 40px;
-      margin: 0 30px;
       transition: 0.25s all;
+      margin: 0 20px;
+
     }
 
     .nav-link:hover {
@@ -60,15 +56,19 @@ nav {
       margin-right: 20px;
     }
 
-    .nav-link .active {
+    .active {
       color: $color-orange;
     }
   }
 
   .meta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+
     text-transform: uppercase;
     margin: 20px 20px;
-    border-top: 1px solid $color-grey;
     padding-top: 10px;
 
     .nav-item {
@@ -87,7 +87,7 @@ nav {
         color: $color-orange;
       }
 
-      .nav-link .active {
+      .active {
         color: $color-orange;
       }
     }

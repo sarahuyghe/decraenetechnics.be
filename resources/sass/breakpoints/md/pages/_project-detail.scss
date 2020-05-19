@@ -2,20 +2,31 @@
   position: relative;
 
   .intro {
+    margin-bottom: 200px;
 
-    & .image-wrapper {
+    .intro-image {
       position: absolute;
       left: 0;
-      top: -50px;
+      top: -75px;
+      padding: 0;
+      display: block;
+    }
 
+    & .image-wrapper {
+      margin: 0;
+      display: block;
+      background-color: $color-lightgrey;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 0;
+      margin-right: 40px;
 
-      &::before {
-        position: relative;
+      img {
+        // margin-left: 20px;
+        margin-left: 20px;
+        padding: 0;
         display: block;
-        background-color: $color-lightgrey;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-left: 15px;
+        width: 100%;
       }
     }
   }

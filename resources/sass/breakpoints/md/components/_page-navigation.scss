@@ -1,6 +1,10 @@
 &.page-navigation {
   nav {
     display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    height: 40px;
+    align-items: center;
   }
 
   p,
@@ -22,6 +26,12 @@
     display: inline;
     padding: 0;
     margin: 0;
+    width: 5px;
+
+    &:hover {
+      color: $color-orange;
+      background-color: transparent;
+    }
   }
 
   .active {
