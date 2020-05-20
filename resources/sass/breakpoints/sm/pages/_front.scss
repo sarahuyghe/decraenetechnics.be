@@ -1,0 +1,33 @@
+&.front {
+
+  .header {
+
+
+    .services {
+      margin-top: 20px
+    }
+  }
+
+  .graphic-house {
+    .electricity {
+      top: -10%
+    }
+
+    .solar-power {
+      top: -20%
+    }
+
+    .smart-home {
+      left: 5%
+    }
+
+    &::before {
+      height: 75px
+    }
+  }
+
+  .column-image-text::before {
+    top: -20%;
+    height: 75%
+  }
+}

@@ -1,1 +1,7 @@
 @import "breakpoints/sm/navigation";
+
+#content {
+  @import "breakpoints/sm/pages/project-detail";
+  @import "breakpoints/sm/pages/blog-detail";
+  @import "breakpoints/sm/pages/front";
+}

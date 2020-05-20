@@ -19,9 +19,14 @@
     const $question = e.currentTarget
     const $answer = $question.parentElement.querySelector(".answer")
     if ($answer.classList.contains('hide')) {
-      $answer.classList.remove('hide')
+      $answer.classList.remove('hide');
+      $question.classList.add('question-open')
+      $question.classList.remove('question-closed')
+
     } else {
       $answer.classList.add('hide')
+      $question.classList.remove('question-open')
+      $question.classList.add('question-closed')
     }
   };
 

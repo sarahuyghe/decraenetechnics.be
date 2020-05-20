@@ -1,8 +1,13 @@
 &.project-detail {
 
-  .intro .image-wrapper {
-    position: relative;
-    top: 0
+  .intro {
+    margin-bottom: 50px;
+
+    .intro-image {
+      position: relative;
+      top: 0;
+      margin-bottom: 10px;
+    }
   }
 
   .title-left {

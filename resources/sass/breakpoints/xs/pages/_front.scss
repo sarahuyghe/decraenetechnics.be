@@ -39,4 +39,22 @@
   .column-image-text::before {
     content: none
   }
+
+  .graphic-house {
+    .graphic-wrapper {
+      margin-bottom: 40px;
+    }
+
+    .content-wrapper {
+      position: relative;
+      margin: 20px 0;
+    }
+
+    .solar-power,
+    .home-battery,
+    .smart-home {
+      right: unset;
+      left: 0
+    }
+  }
 }

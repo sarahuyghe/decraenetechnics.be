@@ -1,0 +1,44 @@
+&.project-detail {
+
+  .intro {
+    margin-bottom: 150px;
+
+    .intro-image {
+      top: 0
+    }
+  }
+
+  .project-wrapper:first-of-type .row::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    background-color: $color-lightestgrey;
+    height: 1px;
+    left: 45%;
+    z-index: -4;
+    top: 50%; // top: 100%;
+  }
+
+  .project-wrapper:nth-of-type(2) .row::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: $color-lightestgrey;
+    height: 166.5%;
+    left: 40%;
+    z-index: -4;
+    top: -33%;
+    bottom: -33%;
+  }
+
+  .project-wrapper:last-of-type .row::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    background-color: $color-lightestgrey;
+    height: 1px;
+    left: 45%;
+    z-index: -4;
+    top: 0;
+  }
+}
