@@ -119,21 +119,109 @@
     }
 
     .electricity {
-      top: 0
+      top: 0;
+      padding: 10px;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 1px;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: $color-orange;
+      }
+
+
+      &::after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: $color-orange;
+      }
     }
 
     .solar-power {
       right: -20px;
-      top: -5%
+      top: -5%;
+      padding: 10px;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background: $color-orange;
+      }
+
+
+      &::after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        background: $color-orange;
+      }
     }
 
     .home-battery {
       bottom: -10%;
       right: -25px;
+      padding: 10px;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 1px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: $color-orange;
+      }
+
+
+      &::after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: $color-orange;
+      }
     }
 
     .smart-home {
-      left: 22.5%
+      left: 22.5%;
+      padding: 10px;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 1px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: $color-orange;
+      }
+
+
+      &::after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: $color-orange;
+      }
     }
   }
 

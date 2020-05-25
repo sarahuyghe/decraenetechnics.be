@@ -126,7 +126,7 @@ section {
     margin-right: auto;
     background-color: $color-white;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width:1200px) {
       background-size: 180px;
       width: 180px;
       height: 180px;
@@ -240,7 +240,7 @@ section {
   border-radius: 0;
   border: unset;
   position: relative;
-  padding: 3px 5px;
+  padding: 3px 6px;
   transition: all .5s;
 
   &:hover {
@@ -250,22 +250,21 @@ section {
 
 .second-cta::before {
   content: "";
-  width: 18px;
+  width: 10px;
   height: 1px;
   left: 0;
   top: 0;
   position: absolute;
-  // z-index: 9;
-  background: linear-gradient(to right, $color-orange 50%, $color-white 50%);
+  background: $color-orange;
 }
 
 .second-cta::after {
   content: "";
-  height: 18px;
+  height: 10px;
   width: 1px;
   left: 0;
   top: 0;
   position: absolute;
-  // z-index: 100;
-  background: linear-gradient(to bottom, $color-orange 50%, $color-white 50%);
+  background: $color-orange;
+
 }

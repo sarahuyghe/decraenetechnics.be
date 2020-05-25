@@ -1,7 +1,11 @@
 &.projects {
+  .projects {
 
-  .row::before,
-  .row::after {
-    content: none
+    .row::before,
+    .row::after {
+      content: unset;
+    }
+
+
   }
 }
