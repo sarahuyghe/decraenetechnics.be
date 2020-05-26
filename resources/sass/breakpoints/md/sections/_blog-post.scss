@@ -1,15 +1,16 @@
 &.blog-post {
 
   .post-wrapper {
-    // position: relative;
+    position: relative;
     margin: 30px 0;
 
     .image-wrapper {
       background: $color-offblack;
       padding-top: 10px;
       padding-bottom: 10px;
-      z-index: -2;
       margin-right: 30px;
+      position: relative;
+      z-index: -1;
     }
 
     img {
@@ -22,7 +23,8 @@
       margin-right: 50px;
       margin-left: 0;
       margin-top: -20px;
-      z-index: 4;
+      z-index: 2;
+      background-color: $color-white;
 
 
       h5 {

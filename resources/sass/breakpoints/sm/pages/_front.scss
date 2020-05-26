@@ -9,6 +9,17 @@
   }
 
   .graphic-house {
+
+    h2::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: $color-lightestgrey;
+      height: 80px;
+      top: -9%;
+      left: 50%;
+    }
+
     .electricity {
       top: -10%
     }

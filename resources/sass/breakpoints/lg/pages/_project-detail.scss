@@ -14,9 +14,9 @@
     width: 50%;
     background-color: $color-lightestgrey;
     height: 1px;
-    left: 47.5%;
+    left: 45%;
     z-index: -4;
-    top: 76%; // top: 100%;
+    top: 100%;
   }
 
   .project-wrapper:nth-of-type(2) .row::before {
@@ -24,11 +24,11 @@
     position: absolute;
     width: 1px;
     background-color: $color-lightestgrey;
-    height: 205%;
-    left: 47.75%;
+    height: 166.5%;
+    left: 45%;
     z-index: -4;
-    top: -52.5%;
-    bottom: 0;
+    top: -33%;
+    bottom: -33%;
   }
 
   .project-wrapper:last-of-type .row::before {
@@ -37,8 +37,8 @@
     width: 50%;
     background-color: $color-lightestgrey;
     height: 1px;
-    left: 47.75%;
+    left: 45%;
     z-index: -4;
-    top: 23.75%;
+    top: 0;
   }
 }

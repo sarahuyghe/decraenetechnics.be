@@ -1,0 +1,66 @@
+&.front {
+
+  .graphic-house {
+    .electricity {
+      top: 11.5%;
+      padding: 10px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 55%;
+        height: 1px;
+        bottom: 10px;
+        background-color: $color-orange;
+        left: 100%;
+      }
+    }
+  }
+
+  .solar-power {
+    right: -20px;
+    top: -5%;
+    padding: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 1px;
+      bottom: 10px;
+      background-color: $color-orange;
+      right: 100%;
+    }
+  }
+
+  .home-battery {
+    bottom: -10%;
+    right: 3.5px;
+    padding: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 150%;
+      bottom: 100%;
+      background: $color-orange;
+      left: 10px
+    }
+  }
+
+  .smart-home {
+    left: 20%;
+    padding: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 300%;
+      bottom: 100%;
+      background: $color-orange;
+      left: 10px
+    }
+  }
+}
