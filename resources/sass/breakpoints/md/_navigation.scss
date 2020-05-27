@@ -3,6 +3,25 @@ nav {
   height: 140px;
   padding: 0.5rem 1rem;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all .5s ease-in-out;
+
+  &.test {
+    height: 75px;
+
+    .navbar-brand {
+      width: 100px;
+    }
+
+    .navbar-collapse {
+      transform: translateY(-15px);
+    }
+
+    .meta {
+      opacity: 0;
+
+      transform: translateY(-40px);
+    }
+  }
 
   .navbar-collapse {
     box-shadow: unset;
@@ -13,6 +32,7 @@ nav {
     top: 0px;
     z-index: 10000;
     width: fit-content;
+    transition: all .5s;
   }
 
   .phonenumber {
@@ -62,6 +82,8 @@ nav {
   }
 
   .meta {
+    transition: opacity .25s ease-in-out;
+    opacity: 1;
     position: absolute;
     top: 0;
     right: 0;
@@ -93,7 +115,5 @@ nav {
     }
   }
 
-  .scrolling {
-    padding-top: -30px;
-  }
+
 }
