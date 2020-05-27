@@ -11,8 +11,10 @@
       margin-left: -15px;
       width: 100%;
     }
+  }
 
-
+  .content-wrapper {
+    margin-left: 25px;
   }
 
   h2,
@@ -21,11 +23,18 @@
   }
 
   .right {
-    margin-left: 0;
-    margin-right: 15px;
+    .content-wrapper {
+      margin-left: unset;
+      margin-right: 25px;
+    }
 
-    img {
-      margin-left: 20px;
+    .image-wrapper {
+      margin-left: 0;
+      margin-right: 15px;
+
+      img {
+        margin-left: 20px;
+      }
     }
   }
 }

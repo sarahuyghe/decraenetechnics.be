@@ -241,10 +241,20 @@ section {
   border: unset;
   position: relative;
   padding: 3px 6px;
-  transition: all .5s;
+  transition: all .5s ease-in-out;
 
   &:hover {
-    color: $color-offblack;
+    transform: translate(2.5px, 2.5px);
+
+    &::before {
+      left: -7.5px;
+      top: -7.5px;
+    }
+
+    &::after {
+      left: -7.5px;
+      top: -7.5px;
+    }
   }
 }
 
@@ -256,6 +266,8 @@ section {
   top: 0;
   position: absolute;
   background: $color-orange;
+  transition: all .5s ease-in-out;
+
 }
 
 .second-cta::after {
@@ -266,5 +278,6 @@ section {
   top: 0;
   position: absolute;
   background: $color-orange;
+  transition: all .5s ease-in-out;
 
 }
