@@ -48,13 +48,22 @@
     .content-wrapper {
       position: relative;
       margin: 20px 0;
+      width: fit-content;
     }
 
     .solar-power,
     .home-battery,
     .smart-home {
       right: unset;
-      left: 0
+      left: 0;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    .electricity::before {
+      content: none
     }
   }
 }

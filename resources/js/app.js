@@ -41,9 +41,9 @@
   const checkposition = () => {
     var windowY = window.scrollY
     if (windowY < $scrollPosition) {
-      $metaMenu.classList.remove('test')
+      $metaMenu.classList.remove('scrolling')
     } else {
-      $metaMenu.classList.add('test')
+      $metaMenu.classList.add('scrolling')
     }
   }
 
