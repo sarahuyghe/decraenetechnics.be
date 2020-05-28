@@ -30,20 +30,23 @@
     }
   };
 
-  const onClickSidebar = () => {
-    if ($sidebar.classList.contains('sidebar-hide')) {
-      $sidebar.classList.remove('sidebar-hide')
-    } else {
-      $sidebar.classList.add('sidebar-hide')
-    }
+  const onMouseEnterSideBar = () => {
+    $sidebar.classList.remove('sidebar-hide')
+  }
+
+  const onMouseOutSideBar = () => {
+    $sidebar.classList.add('sidebar-hide')
+
   }
 
   const checkposition = () => {
-    var windowY = window.scrollY
-    if (windowY < $scrollPosition) {
-      $metaMenu.classList.remove('scrolling')
-    } else {
-      $metaMenu.classList.add('scrolling')
+    if (screen.width > 992) {
+      var windowY = window.scrollY
+      if (windowY < $scrollPosition) {
+        $metaMenu.classList.remove('scrolling')
+      } else {
+        $metaMenu.classList.add('scrolling')
+      }
     }
   }
 
@@ -52,7 +55,9 @@
     $questions.forEach((question) =>
       question.addEventListener(`click`, onClickQuestion)
     );
-    $sidebar.addEventListener(`click`, onClickSidebar)
+    $sidebar.addEventListener(`mouseover`, onMouseEnterSideBar)
+    $sidebar.addEventListener(`mouseout`, onMouseOutSideBar)
+
 
 
   };

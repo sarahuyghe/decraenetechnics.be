@@ -11,6 +11,7 @@
       margin-right: 30px;
       position: relative;
       z-index: -1;
+      transition: all .5s ease-in-out;
     }
 
     img {
@@ -26,12 +27,12 @@
       z-index: 2;
       background-color: $color-white;
 
-
       h5 {
         line-height: 25px;
         font-weight: normal;
         color: $color-offblack;
         margin-bottom: 24px;
+        transition: all .5s ease-in-out;
       }
 
       .category {
@@ -43,7 +44,20 @@
         margin-bottom: 20px;
         color: $color-grey;
         padding-right: .5rem;
+        transition: all .5s ease-in-out;
       }
+    }
+
+    &:hover {
+      .image-wrapper {
+        transform: scale(1.05);
+      }
+
+      h5,
+      .category {
+        color: $color-orange;
+      }
+
     }
   }
 }

@@ -35,10 +35,16 @@
     color: $color-grey;
   }
 
+  .tag:last-of-type::after {
+    display: none;
+  }
+
+  .tag:first-of-type {
+    margin-left: 5px;
+  }
+
   .filter-tags {
     display: flex;
     flex-wrap: wrap;
-
-
   }
 }

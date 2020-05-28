@@ -3,13 +3,16 @@
     box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.1);
     padding: 30px;
     margin-bottom: 30px;
+    transition: all .5s ease-in-out;
+
 
     .question {
       font-size: 1.8rem;
       line-height: 23px;
       font-weight: 700;
       color: $color-offblack;
-      margin-bottom: 24px;
+      transition: all .5s ease-in-out;
+
     }
 
     .category {
@@ -18,7 +21,16 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       line-height: 15px;
+      margin-top: 24px;
       margin-bottom: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+
+      .question {
+        color: $color-orange;
+      }
     }
   }
 }

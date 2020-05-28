@@ -8,6 +8,11 @@ footer#site-footer {
 
   a {
     color: $color-offblack;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $color-orange;
+    }
   }
 
   p {

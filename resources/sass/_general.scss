@@ -19,6 +19,11 @@ h1 {
   font-size: 3.5rem;
 
   @media only screen and (min-width: 768px) {
+    font-size: 3.8rem;
+
+  }
+
+  @media only screen and (min-width: 992px) {
     font-size: 4.4rem;
   }
 
@@ -35,7 +40,15 @@ h2 {
 }
 
 h3 {
-  font-size: 4.4rem;
+  font-size: 3rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: 4.4rem;
+  }
 }
 
 h4 {
@@ -95,7 +108,6 @@ section {
 
   @media only screen and (min-width: 992px) {
     margin: 100px 0;
-
   }
 
   @media only screen and (min-width: 992px) {
@@ -206,32 +218,78 @@ section {
   letter-spacing: 0.05em;
   font-weight: 700;
   color: $color-white;
+  padding: 0 35px;
+  margin: 20px 0;
+  transition: all .5s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: $color-orange;
+
+  @media only screen and (min-width: 768px) {
+    background-color: unset;
+
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: $color-offblack;
+    transition: all .5s;
+    z-index: -1;
+    margin: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-orange;
+    z-index: -2;
+    margin: 0;
+    border: solid 1px $color-orange;
+  }
+
+  &:hover {
+    color: $color-white;
+
+    &::before {
+      height: 100%;
+      border: solid 1px $color-black;
+    }
+  }
+}
+
+.btn-cta-grey {
+  @extend .btn;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: $color-white;
   background-color: $color-orange;
   border-color: $color-orange;
+  color: $color-offblack;
+  border-color: $color-offblack;
+  background-color: unset;
+  font-weight: 600;
   padding: 0 35px;
   margin: 20px 0;
   transition: all .5s;
 
-  &-grey {
-    @extend .btn-cta;
-    color: $color-offblack;
-    border-color: $color-offblack;
-    background-color: unset;
-    font-weight: 600;
-
-    &:hover {
-      color: $color-orange;
-      border-color: $color-orange;
-    }
-
-  }
-
   &:hover {
-    background-color: $color-white;
-    color: $color-orange
+    color: $color-orange;
+    border-color: $color-orange;
   }
 }
-
 
 
 .second-cta {
